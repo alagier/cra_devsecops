@@ -1,0 +1,29 @@
+$ vexctl create --product="pkg:maven/com.thoughtworks.xstream/xstream@1.4.5" \
+                --vuln="CVE-2021-21351" \
+                --status="not_affected" \
+                --justification="inline_mitigations_already_exist" \
+                --impact-statement="Whilelist has been provided to mitigate the vulnerability"
+
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://openvex.dev/docs/public/vex-67cccf97001404eb2d225b821c2c59db6e24e7f1f82b73252568341e8e52b1d3",
+  "author": "Unknown Author",
+  "timestamp": "2024-06-12T09:35:38.70684765-04:00",
+  "version": 1,
+  "statements": [
+    {
+      "vulnerability": {
+        "name": "CVE-2021-21351"
+      },
+      "timestamp": "2024-06-12T09:35:38.706849432-04:00",
+      "products": [
+        {
+          "@id": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "inline_mitigations_already_exist",
+      "impact_statement": "Whilelist has been provided to mitigate the vulnerability"
+    }
+  ]
+}
